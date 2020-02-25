@@ -10,8 +10,11 @@ class MoviesController < ApplicationController
         #         @title = @search["name"]
         #         @places = Place.where("name ILIKE ?", "%#{@name}%").or(Place.where("description ILIKE ?", "%#{@description}%")).paginate(page: params[:page], per_page: 3)
         #       end
+        return @movies
+    end
+
+    def show
         
 
-        return @movies
     end
 end
